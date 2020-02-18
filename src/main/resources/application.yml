@@ -1,16 +1,16 @@
-#spring:
-#  profiles.active: home
-#---
-#spring:
-#  profiles: home
-#  name: home-YAML
-#  environment: home
-#  h2:
-#    console:
-#      enabled: true
-#      path: /h2
-#  datasource:
-#    url: jdbc:h2:mem:testdb;IFEXISTS=FALSE;
-#    username: sa
-#    password: 
-#    driverClassName: org.h2.Driver
+spring:
+  profiles.active: home
+---
+spring:
+  profiles: home
+  name: home-YAML
+  environment: home
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:testdb;IFEXISTS=FALSE;
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
