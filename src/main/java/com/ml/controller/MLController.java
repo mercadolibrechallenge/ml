@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ml.common.AdnMatriz;
 import com.ml.common.EsUnMutanteException;
-import com.ml.entities.Role;
 import com.ml.services.ADNService;
-import com.ml.services.IRolService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,9 +27,6 @@ import org.slf4j.LoggerFactory;
 @RestController
 public class MLController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(MLController.class);
-	
-	@Autowired
-	private IRolService roleService;
 	
 	@Autowired
 	private ADNService adnService;

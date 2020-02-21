@@ -1,0 +1,11 @@
+package com.ml.common;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+
+{ AdnMatrizTest.class })
+public class TestSuite { // nothing
+}
