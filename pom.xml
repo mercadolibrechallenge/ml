@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.ml</groupId>
 	<artifactId>challenge</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>challenge</name>
 	<description>Challenge for ML</description>
 
@@ -60,7 +60,13 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <optional>true</optional>
+        </dependency>
+        
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -89,13 +95,13 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
@@ -109,6 +115,12 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<!-- Docker <plugin> <groupId>com.spotify</groupId> <artifactId>dockerfile-maven-plugin</artifactId> 
+				<version>1.4.10</version> <executions> <execution> <id>default</id> <goals> 
+				<goal>build</goal> </goals> </execution> </executions> <configuration> <repository>jpvila/${project.artifactId}</repository> 
+				<tag>${project.version}</tag> <skipDockerInfo>true</skipDockerInfo> </configuration> 
+				</plugin> -->
 		</plugins>
 	</build>
 

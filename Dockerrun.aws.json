@@ -1,0 +1,12 @@
+{
+	"AWSEBDockerrunVersion": "1",
+	"Image": {
+		"Name": "jpvila/challenge:0.0.1-SNAPSHOT",
+		"Update": "true"
+	},
+	"Ports": [
+		{
+			"ContainerPort": "5000"
+		}
+	]
+}

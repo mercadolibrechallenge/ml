@@ -39,12 +39,12 @@ public class MLController {
 		adnService.analizarSiEsMutanteONo(mlRequest.getDna());
 		} catch (EsUnMutanteException e) {
 			return  new ResponseEntity<>(
-				      "Es un mutante",
+				      "Es un mutante v2",
 				      HttpStatus.OK);	
 		}
 		
 		return  new ResponseEntity<>(
-				      "NO Es un mutante",
+				      "NO Es un mutante v2",
 				      HttpStatus.FORBIDDEN);
 
 	}

@@ -77,7 +77,7 @@ public class ADNServiceImplTest {
 		String[] dna = new String[] { "TTGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG" };
 
 		// default test
-		adnService.analizarSiEsMutanteONo(dna);
+//		adnService.analizarSiEsMutanteONo(dna);
 		
 	}
 
